@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tour</title>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/popper.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="fontawesome-free/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="estilos.css">
+
+
+    <title>Article</title>
+</head>
+
+<body>
+
+<header class="row justify-content-center ">
+
+    <article class="col-4 col-lg-2">
+
+        <a href="Home.html">
+            <img class="img-fluid  w-75 my-5 mx-5 mx-lg-0 my-lg-3" src="Img/logo.png" alt="logo">
+        </a>
+
+    </article>
+
+    <nav class="navbar navbar-light bg-light navbar-expand-lg col-8 col-lg-12 sticky-top">
+
+        <button class="navbar-toggler custom-toggler ml-auto mr-4 mt-2" type="button" onclick="show('collapsibleNavbar')" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon "></span>
+        </button>
+
+        <div class="collapse navbar-collapse " id="collapsibleNavbar">
+
+            <button type="button" class="close d-lg-none " onclick="hide('collapsibleNavbar')" aria-label="Close">
+                <i class="fa fa-times fa-3x text-white mr-5 mt-5" aria-hidden="true"></i>
+            </button>
+
+            <script>
+
+                function show(target) {
+                    document.getElementById(target).style.display = 'block';
+                }
+
+                function hide(target) {
+                    document.getElementById(target).style.display = 'none';
+                }
+            </script>
+
+
+            <ul class="navbar-nav mx-lg-auto marginmenu justify-content-center">
+                <li class="nav-item active">
+                    <a class="nav-link text-white" href="About.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="News.html">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="Store.html">Store</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="Tour.html">Tour</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="Featured.html">Featured</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="Log-In.html">Featured</a>
+                </li>
+
+                <li class="input-group ml-lg-2 w-75">
+                    <input type="text" class="form-control mt-4 mt-lg-0 " placeholder="Search for...">
+                    <span class="input-group-btn mt-4 mt-lg-0">
+                     <button class="btn btn-dark" type="submit">
+                     <i class="fa fa-search "></i>
+                     </button>
+                     </span>
+                </li>
+
+            </ul>
+
+
+        </div>
+    </nav>
+
+
+</header>
+
+<main class="container-fluid">
+
+    <h1 class="text-center">Tours</h1>
+
+    <section class="row">
+        <div class="container-fluid ">
+
+            <select class="col-sm-12 col-md-4 ">
+                <option value="" selected>All Artists on Tour</option>
+                <option value="bondy">A. A. Bondy</option>
+                <option value="green">Al Green</option>
+                <option value="andrews">Courtney Marie Andrews</option>
+                <option value="ellis">Ellis</option>
+                <option value="men">Insecure Men</option>
+                <option value="pulp">High Pulp</option>
+                <option value="mouse">Modest Mouse</option>
+                <option value="rogers">Maggie Rogers</option>
+                <option value="rhye">Rhye</option>
+                <option value="districts">The Districts</option>
+                <option value="x">X</option>
+            </select>
+
+            <select class="col-sm-12 col-md-4">
+                <option value="" selected>All aLocations</option>
+                <option value="us" disabled >United States</option>
+                <option value="az">Arizona</option>
+                <option value="ca">California</option>
+                <option value="co">Colorado</option>
+                <option value="fl">Florida</option>
+                <option value="ga">Georgia</option>
+                <option value="il">Illinois</option>
+                <option value="in">Indiana</option>
+                <option value="ks">Kansas</option>
+                <option value="kt">Kentuck</option>
+                <option value="ma">Maine</option>
+                <option value="mass">Massachusetts</option>
+                <option value="mch">Michigan</option>
+                <option value="mn">Minnesota</option>
+                <option value="nj">New Jersey</option>
+                <option value="ny">New York</option>
+                <option value="or">Oregon</option>
+                <option value="pen">Pennsylvania</option>
+                <option value="ri">Rhode Island</option>
+                <option value="ten">Tennessee</option>
+                <option value="tx">Texas</option>
+                <option value="ut">Utah</option>
+                <option value="va">Virginia</option>
+                <option value="wsh">Washington</option>
+                <option value="dc">Washington D.C.</option>
+                <option value="wi">Wisconsin</option>
+                <option value="" disabled>Other countries</option>
+                <option value="aus">Australia</option>
+                <option value="can">Canada</option>
+                <option value="eu">Europe</option>
+            </select>
+
+
+                <a href="">
+                    <button class="btn2 font-weight-bold col-sm-12 col-md-2 " > Reset Filters</button>
+                </a>
+
+        </div>
+    </section>
+
+    <section class="row">
+
+        <article class="container-fluid ">
+            <h3 class="text-danger">A.A. Bondy</h3>
+            <div class=" table-responsive  text-center ">
+                <table class="table">
+                    <tr>
+                    <th>DATE</th>
+                    <th>VENUE</th>
+                    <th>LOCATION</th>
+                    </tr>
+                    <tr class="table-hover">
+                        <td>Jun 20, 2019</td>
+                        <td> <a class="bilhete" href="https://www.ticketmaster.com/" target="_blank"><i class="fa  fa-solid fa-ticket-alt " ></i></a> 7th Street Entry</td>
+                        <td>Minneapolis, MN</td>
+                    </tr>
+                    <tr class="table-hover">
+                        <td>Jun 20, 2019</td>
+                        <td> <a class="bilhete" href="https://www.ticketmaster.com/" target="_blank"><i class="fa  fa-solid fa-ticket-alt " ></i></a> 7th Street Entry</td>
+                        <td>Minneapolis, MN</td>
+                    </tr>
+                    <tr class="table-hover">
+                        <td>Jun 20, 2019</td>
+                        <td> <a class="bilhete" href="https://www.ticketmaster.com/" target="_blank"><i class="fa  fa-solid fa-ticket-alt " ></i></a> 7th Street Entry</td>
+                        <td>Minneapolis, MN</td>
+                    </tr>
+                    <tr class="table-hover">
+                        <td>Jun 20, 2019</td>
+                        <td> <a class="bilhete" href="https://www.ticketmaster.com/" target="_blank"><i class="fa  fa-solid fa-ticket-alt " ></i></a> 7th Street Entry</td>
+                        <td>Minneapolis, MN</td>
+                    </tr>
+                    <tr class="table-hover">
+                        <td>Jun 20, 2019</td>
+                        <td> <a class="bilhete" href="https://www.ticketmaster.com/" target="_blank"><i class="fa  fa-solid fa-ticket-alt " ></i></a> 7th Street Entry</td>
+                        <td>Minneapolis, MN</td>
+                    </tr>
+                    <tr class="table-hover">
+                        <td>Jun 20, 2019</td>
+                        <td> <a class="bilhete" href="https://www.ticketmaster.com/" target="_blank"><i class="fa  fa-solid fa-ticket-alt " ></i></a> 7th Street Entry</td>
+                        <td>Minneapolis, MN</td>
+                    </tr>
+                    <tr class="table-hover">
+                        <td>Jun 20, 2019</td>
+                        <td> <a class="bilhete" href="https://www.ticketmaster.com/" target="_blank"><i class="fa  fa-solid fa-ticket-alt " ></i></a> 7th Street Entry</td>
+                        <td>Minneapolis, MN</td>
+                    </tr>
+                    <tr class="table-hover">
+                        <td>Jun 20, 2019</td>
+                        <td> <a class="bilhete" href="https://www.ticketmaster.com/" target="_blank"><i class="fa  fa-solid fa-ticket-alt " ></i></a> 7th Street Entry</td>
+                        <td>Minneapolis, MN</td>
+                    </tr>
+                    <tr class="table-hover">
+                        <td>Jun 20, 2019</td>
+                        <td> <a class="bilhete" href="https://www.ticketmaster.com/" target="_blank"><i class="fa  fa-solid fa-ticket-alt " ></i></a> 7th Street Entry</td>
+                        <td>Minneapolis, MN</td>
+                    </tr>
+                    <tr class="table-hover">
+                        <td>Jun 20, 2019</td>
+                        <td> <a class="bilhete" href="https://www.ticketmaster.com/" target="_blank"><i class="fa  fa-solid fa-ticket-alt " ></i></a> 7th Street Entry</td>
+                        <td>Minneapolis, MN</td>
+                    </tr>
+
+
+
+                </table>
+            </div>
+        </article>
+    </section>
+</main>
+
+<footer class="row text-center py-4 justify-content-center ">
+    <section class="newsletter col-12">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="content">
+                        <h2 class="text-dark my-4">Subscribe Newsletter</h2>
+                        <div class="input-group ">
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                            <span class="input-group-btn">
+         <button class="btn preto" type="submit">Subscribe Now</button>
+         </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <h2 class="text-dark my-4">Social Media</h2>
+
+        <div class="text-center">
+
+            <a href="">
+                <i class="fa  fa-youtube fa-2x text-dark"></i>
+            </a>
+            <a href="">
+                <i class="fa fa-instagram fa-2x text-dark"></i>
+            </a>
+            <a href="">
+                <i class="fa fa-facebook fa-2x text-dark"></i>
+            </a>
+            <a href="">
+                <i class="fa  fa-twitter fa-2x text-dark"></i>
+            </a>
+
+        </div>
+
+        <p class="text-dark mt-4">@2019 IndieWorld.com | Website </p>
+
+    </section>
+
+</footer>
+</body>
+</html>

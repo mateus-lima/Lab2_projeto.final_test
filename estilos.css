@@ -1,0 +1,296 @@
+
+
+* {  padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    text-decoration: none !important;
+}
+
+
+
+.preto{background-color:black;}
+
+
+
+
+
+body {background-color:white;
+	color:black;
+    font-family:'Open Sans', sans-serif;
+}
+
+nav { font-family:open-sans-bold;
+        font-size: larger;
+
+
+}
+
+
+
+
+
+
+
+section.noticia figcaption {
+    font-size: larger;
+    margin-top: 1rem;
+}
+
+
+section.textonoticia p {font-size: 1.5rem
+
+}
+
+
+
+footer {background-color:white;
+
+
+}
+
+
+
+footer div a {margin-right: 2rem
+
+}
+
+
+/*--------------------------------------------------------------------------------------*/
+/*Classes*/
+
+
+
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 4em;
+    height: 4em;
+    vertical-align: middle;
+    content: "";
+    background: no-repeat center center;
+    background-size: 100% 100%;
+    color:black;
+}
+
+
+.page-link  { background-color:black;}
+
+
+.alturaindicador {height: 1.6rem !important;}
+
+
+.altura{height:1.6rem;}
+
+.bilhete{color:red;}
+
+
+/* Style buttons */
+main.artigo .btn {
+    background-color: white; /* Blue background */
+    border: transparent 2px solid; /* Remove borders */
+    color: red; /* White text */
+    padding: 12px 16px; /* Some padding */
+    font-size: 16px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+
+}
+
+/* Darker background on mouse-over */
+main.artigo .btn:hover {
+    background-color: white;
+    color: red;
+    border: red 2px solid;
+
+}
+
+
+
+
+/*--------------------------------------------------------------------------------------*/
+/*FAQ*/
+
+#accordion {
+color: rgb(67,66,68);
+border: 0}
+
+.card {border: 0
+}
+
+.card-header {background-color: rgb(246,248,252);
+    color: rgb(67,66,68);
+ }
+
+.card-body {background-color: rgb(246,248,252);
+    color: rgb(67,66,68);
+    padding-left: 2.5rem;
+font-size: larger}
+
+div#accordion button {    color: black; font-size: x-large
+}
+
+
+/*--------------------------------------------------------------------------------------*/
+/*Subscribe Newsletter*/
+
+.newsletter {
+    background:white;
+}
+
+.newsletter .content {
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 2; }
+
+.newsletter .content .form-control {
+    height: 3.2rem;
+}
+
+.newsletter .content.form-control:focus {
+    box-shadow: none;
+    border: 2px solid #243c4f;
+}
+
+.newsletter .content .btn {
+    min-height: 50px;
+    border-radius:0;
+    background: #243c4f;
+    color: #fff;
+    font-weight:600;
+
+}
+
+
+
+/*--------------------------------------------------------------------------------------*/
+/*Media Queries*/
+
+@media (max-width: 575px)  {nav {background-color:transparent !important; }
+
+
+    .navbar-collapse    {
+        color:black;
+}
+
+    nav ul {margin-top: 7rem;
+        font-size: x-large; }
+
+    nav li {margin-bottom: 0.5rem; }
+
+    .marginmenu {margin-left: 4rem}
+
+
+
+}
+
+
+@media (min-width: 576px) {nav {background-color:transparent !important; }
+
+
+
+    .navbar-collapse    {
+        background-color: black;
+        color:white;
+        position: fixed; top: 0; bottom: 0; left: 0; right: 0;    }
+
+    nav ul {margin-top: 7rem;
+            font-size: x-large;}
+
+    nav li {margin-bottom: 0.5rem;}
+
+    .marginmenu {margin-left: 8rem}
+
+
+}
+
+@media (max-width: 760px) {
+    audio{width:100%;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .sticky-top { position: static !important;
+    }
+
+
+    div#collapsibleNavbar {
+
+        top: 0;
+        z-index: 1020;}
+}
+
+
+@media (min-width: 992px) {
+
+
+    nav {background-color: black !important; }
+
+
+    .navbar-collapse {position: relative}
+
+
+    nav ul {margin-top: 0;
+        font-size:large;  }
+
+    nav li {margin-bottom: 0;
+            margin-right: 1rem}
+
+    .marginmenu {margin-left: 1.5rem}
+
+}
+
+/* Style buttons */
+.btn {
+    background-color: white; /* White background */
+    border: transparent 2px solid; /* Remove borders */
+    color: red; /* Red text */
+    padding: 12px 12px; /* Some padding */
+    font-size: 16px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+
+}
+
+.btn2{
+    background-color: red; /* White background */
+    border: transparent 2px solid; /* Remove borders */
+    color: white; /* Red text */
+    padding: 12px 12px; /* Some padding */
+    font-size: 16px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+    color: red;
+    border: red 2px solid;
+}
+
+.btn2:hover{
+    color:red;
+    background-color:white;
+    border:red 2px solid;
+}
+
+.marginbtn{margin-left:13rem;
+    margin-bottom:1.5rem;
+}
+
+
+
+
+/* Style borders */
+.traços{
+    border-bottom:solid 2px darkgrey;
+    border-top:solid 2px darkgrey;
+}
+
+
+.w-90{width:90%;}
+.p-6{padding-top:3rem;}
+
+
+select{
+    padding-top:12px;
+    padding-bottom:12px;
+    margin-bottom:8px;
+}

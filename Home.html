@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<script src="js/jquery-3.3.1.js"></script>
+	<script src="js/popper.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+	<script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="fontawesome-free/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="estilos.css">
+
+
+    <title>IndieWorld</title>
+
+</head>
+
+<body>
+
+
+<header class="row justify-content-center ">
+
+    <article class="col-4 col-lg-2">
+
+        <a href="Home.html">
+            <img class="img-fluid  w-75 my-5 mx-5 mx-lg-0 my-lg-3" src="Img/logo.png" alt="logo">
+        </a>
+
+    </article>
+
+
+    <nav class="navbar navbar-dark navbar-expand-lg col-8 col-lg-12 sticky-top">
+
+        <button class="navbar-toggler custom-toggler ml-auto mr-4 mt-2" type="button" onclick="show('collapsibleNavbar')" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon "></span>
+        </button>
+
+        <div class="collapse navbar-collapse " id="collapsibleNavbar">
+
+            <button type="button" class="close d-lg-none " onclick="hide('collapsibleNavbar')" aria-label="Close">
+                <i class="fa fa-times fa-3x text-white mr-5 mt-5" aria-hidden="true"></i>
+            </button>
+
+            <script>
+
+                function show(target) {
+                    document.getElementById(target).style.display = 'block';
+                }
+
+                function hide(target) {
+                    document.getElementById(target).style.display = 'none';
+                }
+            </script>
+
+
+
+            <ul class="navbar-nav mx-lg-auto marginmenu justify-content-center">
+                <li class="nav-item active">
+                    <a class="nav-link text-white" href="About.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="News.html">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="Store.html">Store</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="Tour.html">Tour</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="Featured.html">Featured</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="Log-In.html">Featured</a>
+                </li>
+
+                <li class="input-group ml-lg-2 w-75">
+                    <input type="text" class="form-control mt-4 mt-lg-0 " placeholder="Search for...">
+                    <span class="input-group-btn mt-4 mt-lg-0">
+                     <button class="btn btn-dark" type="submit">
+                     <i class="fa fa-search "></i>
+                     </button>
+                     </span>
+                </li>
+
+            </ul>
+
+
+        </div>
+    </nav>
+
+
+</header>
+
+    <main class="container-fluid">
+        <article class="col-12 my-5">
+
+            <h1 class="text-center">Featured</h1>
+
+        </article>
+
+
+        <article>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div >
+                <img src="" alt="" class="d-block img-fluid col-sm-12 p-0">
+                        </div>
+                    </div>
+            </div>
+            </div>
+        </article>
+
+
+
+    </main>
+
+<footer class="row text-center py-4 justify-content-center ">
+    <section class="newsletter col-12">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="content">
+                        <h2 class="text-dark my-4">Subscribe Newsletter</h2>
+                        <div class="input-group ">
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                            <span class="input-group-btn">
+         <button class="btn preto" type="submit">Subscribe Now</button>
+         </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <h2 class="text-dark my-4">Social Media</h2>
+
+        <div class="text-center">
+
+            <a href="">
+                <i class="fa fa-youtube fa-2x text-dark"></i>
+            </a>
+            <a href="">
+                <i class="fa fa-instagram fa-2x text-dark"></i>
+            </a>
+            <a href="">
+                <i class="fa fa-facebook fa-2x text-dark"></i>
+            </a>
+            <a href="">
+                <i class="fa fa-twitter fa-2x text-dark"></i>
+            </a>
+
+        </div>
+
+        <p class="text-dark mt-4">@2019 IndieWorld.com | Website </p>
+
+    </section>
+
+</footer>
+
+</body>
+</html>

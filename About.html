@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/popper.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="fontawesome-free/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="estilos.css">
+
+
+    <title>IndieWorld</title>
+
+</head>
+<body>
+<header class="row justify-content-center ">
+
+    <article class="col-4 col-lg-2">
+
+        <a href="Home.html">
+            <img class="img-fluid  w-75 my-5 mx-5 mx-lg-0 my-lg-3" src="Img/logo.png" alt="logo">
+        </a>
+
+    </article>
+
+
+    <nav class="navbar navbar-dark navbar-expand-lg col-8 col-lg-12 sticky-top">
+
+        <button class="navbar-toggler custom-toggler ml-auto mr-4 mt-2" type="button" onclick="show('collapsibleNavbar')" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon "></span>
+        </button>
+
+        <div class="collapse navbar-collapse " id="collapsibleNavbar">
+
+            <button type="button" class="close d-lg-none " onclick="hide('collapsibleNavbar')" aria-label="Close">
+                <i class="fa fa-times fa-3x text-white mr-5 mt-5" aria-hidden="true"></i>
+            </button>
+
+            <script>
+
+                function show(target) {
+                    document.getElementById(target).style.display = 'block';
+                }
+
+                function hide(target) {
+                    document.getElementById(target).style.display = 'none';
+                }
+            </script>
+
+
+            <ul class="navbar-nav mx-lg-auto marginmenu justify-content-center">
+                <li class="nav-item active">
+                    <a class="nav-link text-white" href="About.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="News.html">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="Store.html">Store</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="Tour.html">Tour</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="Featured.html">Featured</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="Log-In.html">Featured</a>
+                </li>
+
+                <li class="input-group ml-lg-2 w-75">
+                    <input type="text" class="form-control mt-4 mt-lg-0 " placeholder="Search for...">
+                    <span class="input-group-btn mt-4 mt-lg-0">
+                     <button class="btn btn-dark" type="submit">
+                     <i class="fa fa-search "></i>
+                     </button>
+                     </span>
+                </li>
+
+            </ul>
+
+
+        </div>
+    </nav>
+
+
+</header>
+
+<main class="container-fluid">
+    <article class="col-12 my-5">
+        <h1 class="text-center">About</h1>
+        <p>If you're into indie music, you probably know just how difficult it is to find great new indie tracks to listen to just by casually browsing for what's available on popular music platforms like Spotify, Apple Music, Google Play Music and Amazon Prime Music.</p>
+        <p>Those platforms are great if you want to easily discover music from artists who work with major record labels, but you'll likely have better luck looking elsewhere for new music released by less popular signed artists or independent artists known for their super obscure pop, rock, folk, hip-hop or electronic sound (dubbed the modern day "indie" genre).</p>
+        <p>To help solve this problem of indie artists needing to share their music and indie music fans needing to discover new music, we've created IndieWorld to bring artists and listeners together.</p>
+        <p>If you're ready to see what's out there in the world of indie music, check out this website.</p>
+
+    </article>
+
+    <section class="row mx-4">
+
+
+        <h2 class="col-12 my-4">FAQ</h2>
+
+
+        <div id="accordion" class="mb-5 col-12">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Who do I contact if I have a question?
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        You  can talk to us directly on our twitter or send us an e-mail at  info@hannahlyzethis.com.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Is it safe to purchase using my credit card?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        Yes! All transactions are secured with SSL encryption.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            What is the refund and cancelation policy?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        We’ll take this case by case:
+                        orders@hannahlyzethis.com .
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseOne">
+                            How do i get in contact  with the Hannahs?
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapseFour" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        On all their social media accounts :)
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingFive">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                            How can i get more involved with the community?
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapseFive" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        You can engage with the hannahs and other earbuds on all of the social media platforms, you can participate on our forum or you can come to a live show!
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <article class="col-12 my-5">
+        <h1>Contact</h1>
+    </article>
+
+    <article class="col-12">
+
+        <p>Beverley Hills, CA 90210 3604</p>
+        <p>USA</p>
+        <p>Phone: (310)273-6700</p>
+        <p>Fax: (310) 247-1111</p>
+        <p>E-mail: hartocollab@gmail.com</p>
+
+    </article>
+
+
+
+</main>
+
+<footer class="row text-center py-4 justify-content-center ">
+    <section class="newsletter col-12">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="content">
+                        <h2 class="text-dark my-4">Subscribe Newsletter</h2>
+                        <div class="input-group ">
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                            <span class="input-group-btn">
+         <button class="btn preto" type="submit">Subscribe Now</button>
+         </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <h2 class="text-dark my-4">Social Media</h2>
+
+        <div class="text-center">
+
+            <a href="">
+                <i class="fa fa-youtube fa-2x text-dark"></i>
+            </a>
+            <a href="">
+                <i class="fa fa-instagram fa-2x text-dark"></i>
+            </a>
+            <a href="">
+                <i class="fa fa-facebook fa-2x text-dark"></i>
+            </a>
+            <a href="">
+                <i class="fa fa-twitter fa-2x text-dark"></i>
+            </a>
+
+        </div>
+
+        <p class="text-dark mt-4">@2019 IndieWorld.com | Website </p>
+
+    </section>
+
+</footer>
+
+</body>
+</html>
