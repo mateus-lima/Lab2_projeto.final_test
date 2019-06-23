@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/popper.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="js/bootstrap.js"></script>
+  <link rel="stylesheet" href="fontawesome-free/css/all.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="estilos.css">
+  <title>IndieWorld</title>
+
+</head>
+
+<body>
+<header class="row justify-content-center ">
+
+  <article class="col-4 col-lg-2" style="text-align: center">
+    <a href="Home.html">
+      <img class="img-fluid  w-75 my-5 mx-5 mx-lg-0 my-lg-3" src="Img/logo.png" alt="logo">
+    </a>
+
+  </article>
+</header>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+<div class="card ">
+  <article class="card-body mx-auto" style="max-width: 400px;">
+    <h4 class="card-title mt-3 text-center">Create Account</h4>
+    <p class="text-center">Get started with your free account</p>
+    <!--<p>
+        <a href="" class="btn btn-block btn-twitter"> <i class="fab fa-twitter"></i>   Login via Twitter</a>
+        <a href="" class="btn btn-block btn-facebook"> <i class="fab fa-facebook-f"></i>   Login via facebook</a>
+    </p>
+    <p class="divider-text">
+        <span class="bg-light">OR</span>
+    </p>-->
+    <form>
+      <div class="form-group input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+        </div>
+        <input name="" class="form-control" placeholder="First and last name" type="text">
+      </div> <!-- form-group// -->
+      <div class="form-group input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+        </div>
+        <input name="" class="form-control" placeholder="Email address" type="email">
+      </div> <!-- form-group// -->
+      <!--<div class="form-group input-group">
+          <div class="input-group-prepend">
+              <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
+          </div>
+          <select class="custom-select" style="max-width: 120px;">
+              <option selected="">+971</option>
+              <option value="1">+972</option>
+              <option value="2">+198</option>
+              <option value="3">+701</option>
+          </select>
+          <input name="" class="form-control" placeholder="Phone number" type="text">
+      </div> -->
+      <!-- <div class="form-group input-group">
+           <div class="input-group-prepend">
+               <span class="input-group-text"> <i class="fa fa-building"></i> </span>
+           </div>
+           <select class="form-control">
+               <option selected="">Favourite genre of music</option>
+               <option></option>
+               <option></option>
+               <option></option>
+           </select>
+       </div>-->
+      <div class="form-group input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+        </div>
+        <input class="form-control" placeholder="Create password" type="password">
+      </div> <!-- form-group// -->
+      <div class="form-group input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+        </div>
+        <input class="form-control" placeholder="Repeat password" type="password">
+      </div> <!-- form-group// -->
+      <div class="form-group">
+        <button type="submit" class="btn btn-block"> Create Account</button>
+      </div> <!-- form-group// -->
+      <p class="text-center">Have an account? <a href="" data-toggle="modal" data-target="#modalLoginForm">Login</a></p>
+    </form>
+  </article>
+</div>
+<div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Sign in</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <i class="fas fa-envelope prefix grey-text"></i>
+          <input type="email" id="defaultForm-email" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="defaultForm-email">Your email</label>
+        </div>
+
+        <div class="md-form mb-4">
+          <i class="fas fa-lock prefix grey-text"></i>
+          <input type="password" id="defaultForm-pass" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="defaultForm-pass">Your password</label>
+        </div>
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+
+        <p class="text-danger col-6" style="text-align: center">
+          <a href="" class="text-danger">
+            Login
+          </a>
+        </p>
+        <p class="col-6">
+          First time?
+          <a href="Signup.html">
+            Sign up
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

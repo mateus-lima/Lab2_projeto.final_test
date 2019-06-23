@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Profile</title>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/popper.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="js/bootstrap.js"></script>
+  <link rel="stylesheet" href="fontawesome-free/css/all.css">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="estilos.css">
+
+
+  <title>IndieWorld</title>
+
+</head>
+<body>
+<header class="row justify-content-center ">
+
+  <article class="col-4 col-lg-2">
+
+    <a href="Home.html">
+      <img class="img-fluid  w-75 my-5 mx-5 mx-lg-0 my-lg-3" src="Img/logo.png" alt="logo">
+    </a>
+
+  </article>
+
+
+  <nav class="navbar navbar-dark  navbar-expand-lg col-8 col-lg-12 sticky-top">
+
+    <button class="navbar-toggler custom-toggler ml-auto mr-4 mt-2" type="button" onclick="show('collapsibleNavbar')"
+            data-toggle="collapse" data-target="#collapsibleNavbar">
+      <i class="fas fa-3x fa-bars" style="color: black"></i>
+    </button>
+
+    <div class="collapse navbar-collapse " id="collapsibleNavbar">
+
+      <button type="button" class="close d-lg-none " onclick="hide('collapsibleNavbar')" aria-label="Close">
+        <i class="fa fa-times fa-3x text-white mr-5 mt-5" aria-hidden="true"></i>
+      </button>
+
+      <script>
+
+          function show(target) {
+              document.getElementById(target).style.display = 'block';
+          }
+
+          function hide(target) {
+              document.getElementById(target).style.display = 'none';
+          }
+      </script>
+
+
+      <ul class="navbar-nav mx-lg-auto marginmenu justify-content-center">
+        <li class="nav-item active">
+          <a class="nav-link text-white" href="About.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="News.html">News</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="Store.html">Store</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="Tour.html">Tour</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="Featured.html">Featured</a>
+        </li>
+        <!--<li class="nav-item">
+          <a href="" class="nav-link text-white" data-toggle="modal" data-target="#modalLoginForm">Login</a>
+        </li>-->
+
+        <li class="input-group ml-lg-2 w-75">
+          <input type="text" class="form-control mt-4 mt-lg-0 " placeholder="Search for...">
+          <span class="input-group-btn mt-4 mt-lg-0">
+                     <button class="btn btn-dark" type="submit">
+                     <i class="fa fa-search "></i>
+                     </button>
+                     </span>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <article class="col-12 my-5">
+
+      <h1 class="text-center">My Profile</h1>
+
+    </article>
+  </div>
+</header>
+
+<div class="container emp-profile">
+  <form method="post">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="profile-img">
+          <img
+            src="https://certifiedsource.com/wp-content/uploads/2018/06/MEA1.jpg"
+            alt=""/>
+          <div id="editarfoto" class="file btn btn-lg btn-primary">
+            Edit Photo
+            <input type="file" name="file"/>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="profile-head">
+          <h3>
+            Hello, Ricardo Fernandes
+          </h3>
+          <hr>
+          <!--<h6>
+            Member since 27 Apr 2019
+          </h6>-->
+          <p class="proile-rating">Most Listened Playlist:
+            <a href="">
+              <span>Best Alternative Rock from the 00's</span></a>, by johncs</p>
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active cinza" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                 aria-controls="home"
+                 aria-selected="true">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link cinza" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                 aria-controls="profile"
+                 aria-selected="false">Preferences</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="profile-work">
+          <a href="">Edit Profile</a>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="tab-content profile-tab" id="myTabContent">
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <div class="row">
+              <div class="titulo col-md-6">
+                <label>Name</label>
+              </div>
+              <div class="col-md-6">
+                <p>Ricardo Fernandes</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="titulo col-md-6">
+                <label>Email</label>
+              </div>
+              <div class="col-md-6">
+                <p>rcfernandes@gmail.com</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="titulo col-md-6">
+                <label>Phone</label>
+              </div>
+              <div class="col-md-6">
+                <p>123 456 7890</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="titulo col-md-6">
+                <label>Date of birth</label>
+              </div>
+              <div class="col-md-6">
+                <p>25 Sep 1993</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="titulo col-md-6">
+                <label>Country</label>
+              </div>
+              <div class="col-md-6">
+                <p>PT</p>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="row">
+              <div class="titulo col-md-6">
+                <label>Most listened band</label>
+              </div>
+              <div class="col-md-6">
+                <p>Passenger</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="titulo col-md-6">
+                <label>Most listened track</label>
+              </div>
+              <div class="col-md-6">
+                <p>Borderline, by Tame Impala</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="titulo col-md-6">
+                <label>Most listened Genre</label>
+              </div>
+              <div class="col-md-6">
+                <p>Indie Rock</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="titulo col-md-6">
+                <label>Preferred method of payment</label>
+              </div>
+              <div class="col-md-6">
+                <p>Paypal</p>
+              </div>
+            </div>
+            <!--<div class="row">
+              <div class="col-md-6">
+                <label>Availability</label>
+              </div>
+              <div class="col-md-6">
+                <p>6 months</p>
+              </div>
+            </div>-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+</body>
+</html>
